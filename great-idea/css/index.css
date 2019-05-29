@@ -64,24 +64,43 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-/*---------- GENERAL ----------*/
+
+/******************** GENERAL ******************/
+
 body {
 	margin: 25px 50px;
 }
 
-.clearfix {
-	overflow: auto;
+hr.index{
+	color: gray;
+	width: 876px;
+	margin: 0;
 }
 
-/*---------- NAV ----------*/
+hr.services{
+	color: gray;
+	width: 880px;
+	margin: 0;
+}
+
+/******************** NAV ******************/
+
 nav {
 	display: flex;
 	justify-content: space-between;
+}
+
+nav.index {
 	width: 876px;
+}
+
+nav.services {
+	width: 880px;
 }
 
 nav a {
 	color: gray;
+	margin-right: 65px;
 }
 
 nav a:hover {
@@ -89,11 +108,16 @@ nav a:hover {
 }
 
 .logo {
+	align-self: flex-end;
 	margin-top: -10px;
 }
 
-/*--------- HEADER ----------*/
-header {
+
+/******************** HEADER ******************/
+
+/* -- Index.html header -- */
+
+header.index {
 	height: 529px;
 	width: 876px;
 	display: flex;
@@ -105,7 +129,7 @@ h1 {
 	font-size: 70px;
 }
 
-button {
+button.index-btn {
 	align-self: center;
 	margin-top: 15px;
 	background: none;
@@ -116,11 +140,11 @@ button {
 	box-shadow: 0 4px lightgray;
 }
 
-button:hover {
+button.index-btn:hover {
 	background-color: lightgreen;
 }
 
-button:active {
+button.index-btn:active {
 	background-color: lightgreen;
 	box-shadow: 0 2px lightslategray;
 	transform: translateY(4px); 
@@ -145,12 +169,21 @@ button:active {
 	align-self: center;
 }
 
-hr {
-	color: gray;
-	width: 876px;
+/* -- Services.html header -- */
+
+header.services {
+	width: 880px;
+	margin: 25px 0;
 }
 
-/*---------- MAIN -----------*/
+h2 {
+	margin-top: 25px;
+}
+
+
+/******************** MAIN ******************/
+
+/* -- Index.html main -- */
 
 /* Top content */
 .top-content {
@@ -201,7 +234,50 @@ hr {
 	padding: 10px;
 }
 
-/* ---------- CONTACT ---------- */
+/* -- Services.html main -- */
+
+div.row {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.box {
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f3f4;
+	padding: 15px;
+	border: 1px solid black;
+	margin: 25px 0;
+	width: 420px;
+}
+
+button.service-btn {
+	background-color: #fff;
+	border: 1px solid black;
+	height: 30px;
+	width: 125px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+div.btm-box {
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	width: 50%;
+}
+
+ul {
+	margin-top: 25px;
+	list-style: disc inside;
+}
+
+.services-info-img {
+	margin: 25px 0;
+}
+/******************** CONTACT ******************/
+
 .contact {
 	width: 876px;
 	display: flex;
@@ -212,9 +288,9 @@ hr {
 	margin-top: 3%;
 }
 
-/*---------- FOOTER ----------*/
+/******************** FOOTER ******************/
+
 footer {
-	width: 876px;
 	display: flex;
 	justify-content: center;
 }

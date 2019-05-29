@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /*---------- GENERAL ----------*/
 body {
-	margin: 25px 100px;
+	margin: 25px 50px;
 }
 
 .clearfix {
@@ -75,11 +75,12 @@ body {
 
 /*---------- NAV ----------*/
 nav {
+	display: flex;
+	justify-content: space-between;
 	width: 876px;
 }
 
 nav a {
-	margin-right: 6%;
 	color: gray;
 }
 
@@ -88,37 +89,31 @@ nav a:hover {
 }
 
 .logo {
-	float: right;
 	margin-top: -10px;
 }
 
 /*--------- HEADER ----------*/
 header {
 	height: 529px;
-	position: relative;
 	width: 876px;
+	display: flex;
+	justify-content: space-between;	
 }
 
 h1 {
-	width: 30%;
 	text-align: center;
 	font-size: 70px;
-	margin: 0 0 0 85px;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 
 button {
+	align-self: center;
+	margin-top: 15px;
 	background: none;
 	border: 1px solid black;
 	padding: 5px 25px;
 	text-align: center;
+	width: 150px;
 	box-shadow: 0 4px lightgray;
-	position: absolute;
-	top: 73%;
-	left: 17%;
 }
 
 button:hover {
@@ -131,17 +126,26 @@ button:active {
 	transform: translateY(4px); 
 }
 
+.header-container1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+.header-container2{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
 .header-img {
-	margin: 0;
-	position: absolute;
-	left: 497px;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-} 
+	align-self: center;
+}
 
 hr {
-	display: inline-block;
 	color: gray;
 	width: 876px;
 }
@@ -151,16 +155,20 @@ hr {
 /* Top content */
 .top-content {
 	width: 876px;
+	display: flex;
+	justify-content: space-between;	
 }
 
 .top-left {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	width: 50%;
 	margin: 3% 0;
 }
 
 .top-right {
-	float: right;
+	display: flex;
+	flex-direction: column;
 	width: 50%;
 	margin: 3% 0;
 }
@@ -168,51 +176,49 @@ hr {
 /* Bottom content */
 .btm-content {
 	width: 876px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .btm-left {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	margin: 3% 0;
-	padding: 10px 0;
-	width: 33%;	
+	padding: 10px 0;	
 }
 
 .btm-center {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	margin: 3% 0;
 	padding: 10px;
-	width: 33%;	
 }
 
 .btm-right {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	margin: 3% 0;
 	padding: 10px;
-	width: 33%;		
 }
 
 /* ---------- CONTACT ---------- */
 .contact {
 	width: 876px;
-	text-align: left;
+	display: flex;
+	flex-direction: column;
 }
 
 .contact h3 {
-	display: inline-block;
 	margin-top: 3%;
-}
-
-address a {
-	display: inline-block;
-	margin: 1% 0;
 }
 
 /*---------- FOOTER ----------*/
 footer {
 	width: 876px;
+	display: flex;
+	justify-content: center;
 }
 
 footer p {
 	margin: 3% 0;
-	text-align: center;
 }

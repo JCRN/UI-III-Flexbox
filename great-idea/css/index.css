@@ -64,3 +64,237 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/******************** GENERAL ******************/
+
+body {
+	margin: 25px 50px;
+}
+
+hr.index{
+	color: gray;
+	width: 876px;
+	margin: 0;
+}
+
+hr.services{
+	color: gray;
+	width: 880px;
+	margin: 0;
+}
+
+/******************** NAV ******************/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav.index {
+	width: 876px;
+}
+
+nav.services {
+	width: 880px;
+}
+
+nav a {
+	color: gray;
+	margin-right: 65px;
+}
+
+nav a:hover {
+	color: #00e600;
+}
+
+.logo {
+	align-self: flex-end;
+	margin-top: -10px;
+}
+
+
+/******************** HEADER ******************/
+
+/* -- Index.html header -- */
+
+header.index {
+	height: 529px;
+	width: 876px;
+	display: flex;
+	justify-content: space-between;	
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+button.index-btn {
+	align-self: center;
+	margin-top: 15px;
+	background: none;
+	border: 1px solid black;
+	padding: 5px 25px;
+	text-align: center;
+	width: 150px;
+	box-shadow: 0 4px lightgray;
+}
+
+button.index-btn:hover {
+	background-color: lightgreen;
+}
+
+button.index-btn:active {
+	background-color: lightgreen;
+	box-shadow: 0 2px lightslategray;
+	transform: translateY(4px); 
+}
+
+.header-container1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+.header-container2{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+.header-img {
+	align-self: center;
+}
+
+/* -- Services.html header -- */
+
+header.services {
+	width: 880px;
+	margin: 25px 0;
+}
+
+h2 {
+	margin-top: 25px;
+}
+
+
+/******************** MAIN ******************/
+
+/* -- Index.html main -- */
+
+/* Top content */
+.top-content {
+	width: 876px;
+	display: flex;
+	justify-content: space-between;	
+}
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 0;
+}
+
+.top-right {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 3% 0;
+}
+
+/* Bottom content */
+.btm-content {
+	width: 876px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btm-left {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 0;
+	padding: 10px 0;	
+}
+
+.btm-center {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 0;
+	padding: 10px;
+}
+
+.btm-right {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 0;
+	padding: 10px;
+}
+
+/* -- Services.html main -- */
+
+div.row {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.box {
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f3f4;
+	padding: 15px;
+	border: 1px solid black;
+	margin: 25px 0;
+	width: 420px;
+}
+
+button.service-btn {
+	background-color: #fff;
+	border: 1px solid black;
+	height: 30px;
+	width: 125px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+div.btm-box {
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	width: 50%;
+}
+
+ul {
+	margin-top: 25px;
+	list-style: disc inside;
+}
+
+.services-info-img {
+	margin: 25px 0;
+}
+/******************** CONTACT ******************/
+
+.contact {
+	width: 876px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact h3 {
+	margin-top: 3%;
+}
+
+/******************** FOOTER ******************/
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+footer p {
+	margin: 3% 0;
+}
